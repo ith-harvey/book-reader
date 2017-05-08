@@ -1,6 +1,9 @@
-{{#each book}}
+{{#each books}}
 <h3>{{this.title}}</h3>
 <p>{{this.description}}</p>
 <p>{{this.genre}}</p>
+<p>{{this.authoring_id}}</p>
+<p>{{this.first_name}}</p>
+<p>{{this.last_name}}</p>
 <img src="{{this.book_url}}"></img>
 {{/each}}
