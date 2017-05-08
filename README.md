@@ -1,7 +1,7 @@
 # book-reader
 
 
-A community driven blog management and discovery platform.
+A book management and discovery platform.
 
 ### Problem Statement:
 
