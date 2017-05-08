@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+{{#each book}}
+<h3>{{this.title}}</h3>
+<p>{{this.description}}</p>
+<p>{{this.genre}}</p>
+<p>{{this.book_url}}</p>
+{{/each}}
