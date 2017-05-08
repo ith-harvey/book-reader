@@ -15,5 +15,5 @@ A community driven blog management and discovery platform.
 * Knex.js
 
 
-### Entity Relationship Diagram:
-![](public/images/pinpointERD.png)
+### Project Tracker:
+https://www.pivotaltracker.com/projects/2018961.
