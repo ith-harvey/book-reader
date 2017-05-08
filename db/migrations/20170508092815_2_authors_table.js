@@ -4,7 +4,7 @@ exports.up = function(knex) {
     table.increments()
     table.string('first_name').notNullable()
     table.string('last_name').notNullable()
-    table.string('biography').notNullable()
+    table.text('biography').notNullable()
     table.string('portrait_url').notNullable()
     table.timestamps(true,true)
   })

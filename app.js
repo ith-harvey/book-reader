@@ -6,9 +6,19 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
 const index = require('./routes/index');
+const authors = require('./routes/authors')
+const books = require('./routes/books')
 const users = require('./routes/users');
 
 const app = express();
+const data = require('./data.js')
+
+
+let parsedBookData
+
+
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,6 +33,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/books', books);
+app.use('/authors', authors);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
