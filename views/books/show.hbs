@@ -1,0 +1,13 @@
+
+<h3>/books/edit/{{book.id}}</h3>
+<h3>{{book.title}}</h3>
+<p>{{book.description}}</p>
+<p>{{book.genre}}</p>
+<p>{{book.authoring_id}}</p>
+<p>{{book.first_name}}</p>
+<p>{{book.last_name}}</p>
+<img src="{{book.book_url}}"></img>
+<a class="btn btn-primary" href="/books/edit/{{book.id}}">edit</a>
+<form action="/books/{{book.id}}?_method=DELETE" method="POST">
+<input class="btn btn-danger" type="submit" value="delete"></input>
+</form>
