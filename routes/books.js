@@ -5,7 +5,7 @@ const db = require('../db')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   return db.distinct('books.id')
-  .select('books.title', 'books.genre', 'books.description', 'authors.first_name', 'authors.last_name', 'authors.id AS authoring_id')
+  .select('books.title', 'books.genre', 'books.book_url', 'books.description', 'authors.first_name', 'authors.last_name', 'authors.id AS authoring_id')
   .from('books')
   .leftJoin('books_authors','books.id','books_authors.book_id')
   .leftJoin('authors','authors.id','books_authors.author_id')

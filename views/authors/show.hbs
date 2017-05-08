@@ -1,0 +1,7 @@
+<img src="{{author.portrait_url}}"></img>
+<h3>{{author.first_name}} {{author.last_name}}</h3>
+<p>{{author.biography}}</p>
+<a class="btn btn-primary" href="/authors/edit/{{author.id}}">edit</a>
+<form action="/authors/{{author.id}}?_method=DELETE" method="POST">
+<input class="btn btn-danger" type="submit" value="delete"></input>
+</form>

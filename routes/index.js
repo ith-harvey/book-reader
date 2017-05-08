@@ -5,7 +5,6 @@ const db = require('../db')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   db('books').select('*').then( book => {
-
     res.render('index', { book, title: 'Express' });
   })
 });

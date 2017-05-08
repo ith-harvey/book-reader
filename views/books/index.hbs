@@ -1,9 +1,23 @@
-{{#each books}}
-<a href="/books/{{this.id}}"><h3>{{this.title}}</h3></a>
-<p>{{this.description}}</p>
-<p>{{this.genre}}</p>
-<p>{{this.authoring_id}}</p>
-<p>{{this.first_name}}</p>
-<p>{{this.last_name}}</p>
-<img src="{{this.book_url}}"></img>
-{{/each}}
+
+
+  {{#each books}}
+    <div class="row">
+      <div data-id="{{this.id }}" class="panel panel-default col-xs-12">
+        <div class="panel-body">
+          <div class="col-xs-3">
+            <img src="{{this.book_url}}"></img>
+          </div>
+          <div class="blog-title col-xs-9">
+            <a href="/books/{{this.id}}"><h3>{{this.title}}</h3></a>
+            <div>
+            <p>{{this.description}}</p>
+            <p>{{this.genre}}</p>
+            <p>{{this.authoring_id}}</p>
+            <p>{{this.first_name}}</p>
+            <p>{{this.last_name}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
